@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html lang=”pt-br”>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="./css/memoDente.css" media="screen" />
+
+		<script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
+		<script type="text/javascript" src="./js/popper.min.js"></script>
+		<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="./js/MemoDente.js"></script>
+
+		<link rel="icon" type="image/x-icon" href="./img/icone.jpg">
+		<title>MemoDente</title>
+	</head>
+
+	<body>
+		<div id="carta00" hidden>
+			<input id="id00" value="" type="hidden" />
+			<input id="valor00" value="" type="hidden" />
+		</div>
+
+		<div id="titulo" class="row" style="color: #0d6efd;">
+			<p id="titulo" class="h1 col text-center"> MemoDente </p>
+		</div>
+		
+		<div id="conteudo" class="row">
+			<div id="mesa" class="container col-9">
+			</div>
+
+			<div id="navegacao" class="container col-3">
+
+				<div class="btn-group-vertical d-flex justify-content-center" role="group" aria-label="Basic radio toggle button group">
+					<input type="radio" class="btn-check" name="fase" id="fase1" autocomplete="off" onchange="criaMesa(this, 2, 4);">
+					<label class="btn btn-outline-primary" for="fase1">Fase 1</label>
+
+					<input type="radio" class="btn-check" name="fase" id="fase2" autocomplete="off" onchange="criaMesa(this, 3, 4);">
+					<label class="btn btn-outline-primary" for="fase2">Fase 2</label>
+
+					<input type="radio" class="btn-check" name="fase" id="fase3" autocomplete="off" onchange="criaMesa(this, 4, 4);">
+					<label class="btn btn-outline-primary" for="fase3">Fase 3</label>
+
+					<input type="radio" class="btn-check" name="fase" id="fase4" autocomplete="off" onchange="criaMesa(this, 4, 5);">
+					<label class="btn btn-outline-primary" for="fase4">Fase 4</label>
+
+					<input type="radio" class="btn-check" name="fase" id="fase5" autocomplete="off" onchange="criaMesa(this, 4, 6);">
+					<label class="btn btn-outline-primary" for="fase5">Fase 5</label>
+				</div>
+
+				<div class="row">
+					<div id="placar" class="alert alert-primary col text-center" role="alert"> </div>
+				</div>
+				<div class="row">
+					<img id="insta_simone" class="col insta" src="./img/tag_insta_simone.png"/>
+					<img id="insta_simone" class="col insta" src="./img/tag_insta_avulsart.png"/>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="acerto" tabindex="-1" aria-labelledby="mensagemAcerto" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3 class="modal-title text-center" id="mensagemAcerto"></h3>
+						<button id="fecharAcerto" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<img id="imagemAcerto" class="rounded img-fluid border border-2 border-primary"/>
+					</div>
+					<div class="modal-footer">
+						<h5 class="modal-title text-center" id="mensagemFinalizado"></h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,47 @@
+html, body {
+	height: 100%;
+}
+
+#conteudo {
+	height: 87.5%;
+	width: 100%;
+}
+
+#titulo {
+	height: 12.5%;
+	width: 100%;
+}
+
+#navegacao, #mesa {
+	position: relative;
+	height: 100%;
+}
+
+#acerto {
+	position: relative;
+	height: 100%;
+}
+
+.insta {
+	width: 50%;
+}
+
+.linha-2 {
+	position: relative;	
+	height: 50%;
+}
+
+.linha-3 {
+	position: relative;
+	height: 33%;
+}
+
+.linha-4 {
+	position: relative;
+	height: 25%;
+}
+
+.altura {
+	position: relative;
+	max-height: 100%;
+}
