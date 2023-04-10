@@ -136,6 +136,7 @@ function mostraMensagemAcerto(pThis) {
 	let acerto = dadosAcerto.find(acerto => acerto.idAcerto === $('#valor00').val());
 
 	var acertoModal = new bootstrap.Modal($('#acerto'));
+	
 	acertoModal.show();
 	
 	$('#imagemAcerto').attr('src',acerto.idAcerto);
